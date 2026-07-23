@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+@import "@fontsource/manrope/latin-600.css";
+@import "@fontsource/manrope/latin-700.css";
+@import "@fontsource/manrope/latin-800.css";
+@import "@fontsource/inter/latin-400.css";
+@import "@fontsource/inter/latin-500.css";
+@import "@fontsource/inter/latin-600.css";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Manrope", ui-sans-serif, system-ui, sans-serif;
+
+  /* Palette sampled directly from the BioAfriq Energy logo */
+  --color-flame-50: #fef3ee;
+  --color-flame-100: #fde3d5;
+  --color-flame-200: #fac4ab;
+  --color-flame-300: #f69e77;
+  --color-flame-400: #f17641;
+  --color-flame-500: #ef5a28;
+  --color-flame-600: #de401a;
+  --color-flame-700: #b83017;
+  --color-flame-800: #92281a;
+  --color-flame-900: #772419;
+
+  --color-amber-50: #fef9ec;
+  --color-amber-100: #fdefc7;
+  --color-amber-200: #fbdc8a;
+  --color-amber-300: #f9c34d;
+  --color-amber-400: #f7ab27;
+  --color-amber-500: #f6a01c;
+  --color-amber-600: #d97e0f;
+  --color-amber-700: #b45f10;
+  --color-amber-800: #924a14;
+  --color-amber-900: #783d14;
+
+  --color-leaf-50: #eefbf0;
+  --color-leaf-100: #d7f5db;
+  --color-leaf-200: #b1eaba;
+  --color-leaf-300: #7ed88d;
+  --color-leaf-400: #48bd5c;
+  --color-leaf-500: #259c3a;
+  --color-leaf-600: #1f8b32;
+  --color-leaf-700: #196e29;
+  --color-leaf-800: #185824;
+  --color-leaf-900: #154920;
+  --color-leaf-950: #082611;
+}
+
+body {
+  font-family: var(--font-sans);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-display);
+}
