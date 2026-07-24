@@ -1,4 +1,6 @@
 import heroDryers from '../assets/images/hero-dryers.jpg'
+import daas from '../assets/images/daas.jpg'
+import bsfDryer from '../assets/images/bsf-dryer.jpg'
 
 type Product = {
   name: string
@@ -6,6 +8,7 @@ type Product = {
   description: string
   features: string[]
   image?: string
+  cta?: string
 }
 
 const products: Product[] = [
@@ -24,26 +27,30 @@ const products: Product[] = [
     ],
   },
   {
-    name: 'Portable Solar Dryer',
-    tagline: 'Take drying to the farm',
+    name: 'Dehydration-as-a-Service',
+    image: daas,
+    tagline: 'No dryer? No problem.',
     description:
-      'A lightweight, easy-to-move dehydrator built for smallholder farmers and households who need flexible, on-site drying.',
+      'Bring your harvest to a BioAfriq climate-smart drying hub and pay only for the drying capacity you use — no equipment purchase required.',
     features: [
-      'Compact and easily transportable',
-      'Dries a wide variety of fruits, vegetables and herbs',
-      'Low-cost entry point for individual farmers',
-      'Simple to operate, no technical training required',
+      'Pay-per-use access to hybrid solar drying capacity',
+      'Community drying hubs built near farming clusters',
+      'Quality-controlled, consistent drying output',
+      'Ideal for farmer groups, cooperatives and processors',
     ],
+    cta: 'Find a drying hub',
   },
   {
-    name: 'Black Soldier Fly (BSF) Dryer',
-    tagline: 'Closing the loop on organic waste',
+    name: 'Hybrid Solar BSF Dryer',
+    image: bsfDryer,
+    tagline: 'Efficiently dry, reliably preserve',
     description:
-      'Purpose-built drying for Black Soldier Fly larvae, turning organic waste streams into a circular-economy protein source for animal feed.',
+      'A rugged, solar-powered dryer purpose-built for Black Soldier Fly larvae — turning organic waste into a high-value, feed-grade protein source.',
     features: [
-      'Supports circular, waste-to-value production',
-      'Consistent drying for feed-grade output',
-      'Designed for BSF and feed producers',
+      'Capacity: 50 kg of larvae per hour',
+      'Solar power with biomass/electric backup',
+      'Durable cabinet design, easy to operate',
+      'Cuts post-harvest losses and boosts feed value',
     ],
   },
 ]
@@ -57,12 +64,12 @@ function Products() {
             Products
           </span>
           <h2 className="mt-3 text-3xl font-bold text-stone-900">
-            Dehydration technology built for African farms
+            Dehydration technology and services built for African farms
           </h2>
           <p className="mt-4 text-stone-600">
-            Every dryer is engineered to work with — not against — the
-            realities of smallholder farming: unreliable grid power,
-            seasonal harvests, and the need to earn from every crop.
+            Own a dryer, or use ours — every option is engineered to work
+            with the realities of smallholder farming: unreliable grid
+            power, seasonal harvests, and the need to earn from every crop.
           </p>
         </div>
 
@@ -98,7 +105,7 @@ function Products() {
                 href="#contact"
                 className="mt-8 inline-flex items-center text-sm font-semibold text-leaf-700 hover:text-leaf-900"
               >
-                Request a quote →
+                {p.cta ?? 'Request a quote'} →
               </a>
             </div>
           ))}

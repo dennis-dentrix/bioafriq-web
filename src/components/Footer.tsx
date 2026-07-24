@@ -18,6 +18,8 @@ function Footer() {
 
         <p className="text-xs text-center">
           © {new Date().getFullYear()} BioAfriq Energy Ltd. Machakos County, Kenya.
+          <br className="md:hidden" />
+          <span className="md:ml-2">Site by Dirant Technologies.</span>
         </p>
 
         <ul className="flex gap-6 text-xs">

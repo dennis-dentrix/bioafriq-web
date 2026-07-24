@@ -8,6 +8,7 @@ import Impact from './components/Impact'
 import Awards from './components/Awards'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
+import FloatingContact from './components/FloatingContact'
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
       <Awards />
       <Contact />
       <Footer />
+      <FloatingContact />
     </div>
   )
 }
